@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/***************************************************/
+
+:root {
+    --woofleBlue: #0049FF;
+    --woofleDarkBlue: #002fa4;
+}
+
+::selection {
+    background-color: var(--woofleBlue);
+    color: white;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    background-image: url(./images/MKWorld_BG_pattern.png);
+    backdrop-filter: blur(6px);
+    
+    color: black;
+    font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/***************************************************/
+
+main {
+    padding: 3% 7%;
+    flex-grow: 1;
+    font-size: 150%;
+}
+
+main a:link, main a:visited, main a:active {
+    color: var(--woofleBlue);
+    text-decoration: none;
+}
+
+main a:hover {
+    color: var(--woofleDarkBlue);
+}
+
+hr {
+    margin: 5vh 0%;
+    border: 1px solid black;
+}
+
+.pic-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/***************************************************/
+
+footer {
+    background-color: black;
+    text-align: center;
+}
+
+#cool-guy {
+    display: inline-block;
+    transition: .5s;
+    margin: 20px;
+}
+
+#cool-guy:hover {
+    transform: rotateX(360deg);
+}
+
+footer a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:active, footer a:hover {
+    text-decoration: underline;
+}
