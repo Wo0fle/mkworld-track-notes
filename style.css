@@ -67,15 +67,23 @@ input[list] {
 .pic-container {
     display: flex;
     justify-content: space-evenly;
+    width: 70vw;
+    margin: auto;
 }
 
 .pic-container img {
-    width: 30%;
-    height: 30%;
+    width: 50%;
+    height: 50%;
     border: thick white solid;
     border-radius: 2vw;
     box-shadow: 0.5vw 0.5vw 5px rgba(0, 0, 0, 0.5);
     margin: auto;
+}
+
+.pic-container .minimap {
+    height: 25%;
+    max-height: 60vh;
+    width: auto;
 }
 
 /***************************************************/
