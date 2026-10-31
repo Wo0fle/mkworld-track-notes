@@ -69,11 +69,13 @@ input[list] {
     justify-content: space-evenly;
     width: 70vw;
     margin: auto;
+    gap: 40px;
 }
 
 .pic-container img {
     width: 50%;
-    height: 50%;
+    height: auto;
+    max-height: 400px;
     border: thick white solid;
     border-radius: 2vw;
     box-shadow: 0.5vw 0.5vw 5px rgba(0, 0, 0, 0.5);
@@ -81,9 +83,23 @@ input[list] {
 }
 
 .pic-container .minimap {
-    height: 25%;
-    max-height: 60vh;
-    width: auto;
+    object-fit: contain;
+    border: 0;
+    box-shadow: none;
+    border-radius: 0;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7));
+}
+
+@media (max-width: 768px) {
+    .pic-container {
+        flex-direction: column;
+    }
+
+    .pic-container img {
+        width: 80%;
+    }
+
+
 }
 
 /***************************************************/
